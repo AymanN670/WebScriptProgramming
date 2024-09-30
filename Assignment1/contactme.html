@@ -1,7 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
+        <meta charset="UTF-8">
     </head>
+    <body>
+        <div id="wrapper">
+            <h1>Contact me for more information</h1>
+            <form action="mailto:ayman.najmuddin@ontariotechu.net" method="post" enctype="text/plain"?subject=Mistakes name="form">
+                <p>
+                    <label for="name">Your Name: </label>
+                    <input type="text" name="name" placeholder="Your complete name" size="32" required>
+                </p>
+                <p>
+                    <label for="email">Your email: </label>
+                    <input type="email" name="email" placeholder="Your email address" size="48" required>
+                </p>
+                <p>
+                    <label for="phone">Your phone number: </label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </p>
+                <p>
+                    <label for="comments">Message: </label>
+                    <br>
+                    <br>
+                    <textarea type="text" name="comments" cols="40" rows="8"></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Click to submit">
+                </p>
+                <p>
+                    <input type="reset" value="Click to reset the form">
+                </p>
+            </form>
+        </div>
+    </body>
 
 </html>
+
