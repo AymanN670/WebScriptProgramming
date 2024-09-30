@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Slideshow</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+
+    <style>
+        /*input + label{color: blue;}*/
+
+        /*input:hover + label{color: red; opacity: 1;}
+
+        input:checked + label{color: green; opacity: 0;} */
+
+        img{width: 100%;}
+
+        body 
+        {
+            width: 80;
+            margin: auto;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .slideshow, .frame
+        {
+            position: relative;
+            /* when we are moving an object we use a relative position */
+            height: 400px;
+            width: 400px;
+            margin: auto;
+        }
+
+        .slide
+        {
+            /*whatever is going to be the width of slideshow and frame, slide is going to use 100% of the width, not 100% width of the page */
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            transition: opacity 2s; 
+            /* they are on top of each other in a hidden position, so you only see one image */
+            
+        }
+        .show:checked + .slide/*.show is a button ; when we check the slide as well change the opacity to 1*/
+        {
+            opacity: 1;
+
+        }
+
+        .btn
+        {
+            display: inline-block;
+        }
+
+        .btn-label
+        {
+            font-size: 1rem;
+            padding: 1rem;
+            background-color: black;
+            color: white;
+            display: block;
+            text-align: center;
+            border-radius: .5rem;
+            cursor: pointer;
+            transition: background 2s;
+            color: 2s;
+        }
+
+        input
+        {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!--<input type="checkbox" name="selected"> -->
+
+    <!--<label for="selected">Click to select</label> -->
+
+    <div class="frame">
+        <h2>Slideshow of Flowers</h2>
+        <div class="Slideshow">
+            <input type="radio" name="btn" class="show" id="one" checked="checked">
+            <div class="slide"><a target="_blank" title="FlowerOne" href="Image1.jpg">
+                <!-- target="_blank" is used to open a new tab-->
+            <img width="512" alt="Pink Flower" src="Image1.jpg">
+
+            <!-- alt is for people who can't see the image-->
+            
+            </a>
+            </div>
+            <input type="radio" name="btn" class="show" id="two">
+            <div class="slide"><a target="_blank" title="FlowerTwo" href="Image2.jpg">
+               
+            <img width="512" alt="White Flower" src="Image2.jpg">
+
+            
+            </a>
+
+            <input type="radio" name="btn" class="show" id="three">
+
+            <!-- you cannot have the same id, every time the id must be unique -->
+             <!-- class remains show-->
+            <!-- radio btns also stay the same-->
+
+            <div class="slide"><a target="_blank" title="FlowerThree" href="Image3.png">
+               
+            <img width="512" alt="No Flower" src="Image3.png">
+    
+                
+            </a>
+
+
+        </div>
+    </div>
+    <li class="btn"><label class="btn-label" for="one">1</label></li>
+    <li class="btn"><label class="btn-label" for="two">2</label></li>
+    <li class="btn"><label class="btn-label" for="three">3</label></li>
+</body>
+</html>
