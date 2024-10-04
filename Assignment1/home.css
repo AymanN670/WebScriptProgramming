@@ -1,4 +1,10 @@
 /* top navigation has a dark grey background */
+body {
+    width: 100%;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 .topnav {
     background-color: darkgrey;
