@@ -3,7 +3,14 @@ body {
     margin: auto;
 }
 
-
+aside 
+{
+    background-color: lightgrey;
+    float: right;
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+}
 
 figure {
     width: 320px;
