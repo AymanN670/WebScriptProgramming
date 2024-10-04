@@ -5,4 +5,11 @@ body
 
 }
 
-
+#wrapper
+{
+    width: 960px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightblue;
+}
