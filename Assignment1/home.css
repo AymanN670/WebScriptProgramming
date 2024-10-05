@@ -6,12 +6,12 @@ body {
 }
 
 
-.topnav {
+nav {
     background-color: darkgrey;
     overflow: hidden;
 }
 
-.topnav a {
+nav a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -21,9 +21,21 @@ body {
     font-size: 18px;
 }
 
-.topnav a:hover {
+nav a:hover {
     background: maroon;
     color: white;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    z-index: 1000;
 }
 
 
