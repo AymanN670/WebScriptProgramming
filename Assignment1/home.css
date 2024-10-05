@@ -3,11 +3,28 @@ body {
     width: 100%;
     margin: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(60deg, #ffafbd 0%, #ffc3a0 100%);
 }
 
+h2 {
+    font-size: large;
+    margin-top: 200px;
+    margin-left: 400px;
+    width: 100%;
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+h1 {
+    margin-left: 400px;
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 nav {
-    background-color: darkgrey;
+    background-color: #93744d;
     overflow: hidden;
 }
 
@@ -28,16 +45,19 @@ nav a:hover {
 
 
 footer {
+    font-size: small;
     text-align: center;
-    padding: 20px 0px;
     position: fixed;
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
     width: 100%;
     z-index: 1000;
+    background-color: #93744d
 }
 
-
+footer p {
+    text-align: ;
+}
 
 
