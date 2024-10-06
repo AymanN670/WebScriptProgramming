@@ -30,23 +30,26 @@
                 </aside>
             </article>
 
-            <h2>Introduction Video</h2>
-            <video width="360" height="220" controls poster="introduction.png" autoplay muted id="introvid">
-                <source src="intro.mp4" type="video/mp4">
-                <source src="intro.ogv" type="video/ogg">
-            </video>
-            <br>
-            <button onclick="PlayPause()">Play/Pause Button</button>
-            <script>
-                var mybtn=document.getElementById("introvid");
-                function PlayPause()
-                {
-                    if(mybtn.paused)
-                        mybtn.play();
-                    else
-                        mybtn.pause();
-                }
-            </script>
+           
+            <div class="right-content">
+                <h2>Introduction Video</h2>
+                <video width="360" height="220" controls poster="introduction.png" autoplay muted id="introvid">
+                    <source src="intro.mp4" type="video/mp4">
+                    <source src="intro.ogv" type="video/ogg">
+                </video>
+                <br>
+                <button onclick="PlayPause()">Play/Pause Button</button>
+                <script>
+                    var mybtn=document.getElementById("introvid");
+                    function PlayPause()
+                    {
+                        if(mybtn.paused)
+                            mybtn.play();
+                        else
+                            mybtn.pause();
+                    }
+                </script>
+            </div>
 
             <footer>
                 <!--email for contact and copyright-->

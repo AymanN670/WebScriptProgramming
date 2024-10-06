@@ -11,24 +11,31 @@ body {
     background-color: lightgray;
 }
 
-#wrapper h2 {
-    position: relative;
-    margin-bottom: 200px;
-    margin-right: 500px;
-    margin-left: 1100px;
-    
+#wrapper .right-content h2{
+    margin-left: 1000px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: maroon;
+    font-size: 24px;
 }
 
-#wrapper video {
-    position: relative;
-    top: -100px;
-    left: 1100px;
+#wrapper .right-content video {
+    width: 30%;
+    margin-bottom: 20px;
+    margin-left: 1000px;
 }
 
-#wrapper button {
-    position: relative;
-    top: -100px;
-    left: 1100px;
+
+#wrapper .right-content button {
+    padding: 10px 20px;
+    margin-left: 1000px;
+    background-color: #485563;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#wrapper .right-content button:hover {
+    background-color: #29323c;
 }
 
 figure {
