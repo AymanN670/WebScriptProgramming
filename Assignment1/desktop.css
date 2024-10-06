@@ -1,0 +1,44 @@
+@charset "UTF-8"; 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* General layout */
+#wrapper {
+    max-width: 1200px; /* Limit width for large screens */
+    margin: 0 auto;
+}
+
+/* Header */
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* About Page */
+#wrapper img {
+    width: 20%; /* Responsive image width */
+}
+
+
+#wrapper {
+    display: flex;
+}
+
+/* Project Page */
+aside {
+    float: right;
+    width: 200px; /* Fixed width for the aside element */
+    padding: 5px;
+}
+
+/* Footer */
+footer {
+    font-size: small;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+}

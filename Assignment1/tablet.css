@@ -1,0 +1,37 @@
+@charset "UTF-8"; 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* General layout */
+#wrapper {
+    width: 90%; /* Full width with some padding */
+}
+
+/* Navigation */
+nav {
+    flex-direction: column; /* Stack links vertically */
+}
+
+/* About Page */
+#wrapper img {
+    width: 50%; /* Increase image size for tablet */
+}
+
+/* Contact Page */
+#wrapper {
+    display: flex;
+}
+
+/* Project Page */
+aside {
+    float: none; /* Remove float on tablets */
+    width: 100%; /* Full width */
+}
+
+/* Footer */
+footer {
+    font-size: small;
+    text-align: center;
+    position: static; /* Move footer down */
+}

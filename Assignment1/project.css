@@ -83,19 +83,13 @@ input {
 
 
 footer {
-    background-color: #93744d;
-    scroll-margin-right: -100px;
-    width: 70%;
-    padding: 13px 0px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-}
-
-footer address, footer p {
     color: black;
-    margin: 0;
+    text-align: center;
+    padding: 0px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    z-index: 1000;
 }
-

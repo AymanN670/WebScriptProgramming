@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Contact Me</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="home.css">
-        <link rel="stylesheet" type="text/css" href="contact.css">
+        <meta charset="UTF-8"> <!-- Character encoding for the document -->
+        <title>Contact Me</title> <!-- Title of the webpage displayed in the browser tab -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive design settings -->
+        
+        <!-- Linking CSS stylesheets for styling the page -->
+        <link rel="stylesheet" type="text/css" href="home.css"> <!-- Main stylesheet -->
+        <link rel="stylesheet" type="text/css" href="contact.css"> <!-- Styles specific to the contact page -->
+        <link href="desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 960px)"> <!-- Styles for desktop screens -->
+        <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)"> <!-- Styles for tablet screens -->
+        <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)"> <!-- Styles for mobile screens -->
     </head>
+    
     <body>
-
         <header>
-            <nav>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Me</a>
-                    <a href="project.html">Projects</a>
-                    <a href="contactme.html">Contact Me</a>
+            <nav> <!-- Navigation bar with links to different pages -->
+                <a href="index.html">Home</a> <!-- Link to Home page -->
+                <a href="about.html">About Me</a> <!-- Link to About Me page -->
+                <a href="project.html">Projects</a> <!-- Link to Projects page -->
+                <a href="contactme.html">Contact Me</a> <!-- Link to Contact Me page -->
             </nav>
         </header>
 
-        <div id="wrapper">
+        <h1 class="contact-title">Contact me for more information</h1> <!-- Main heading for the contact section -->
 
-
-            <h2>Contact me for more information</h2>
-            <form action="mailto:ayman.najmuddin@ontariotechu.net" method="post" enctype="text/plain"?subject=Mistakes name="form">
+        <div id="wrapper"> <!-- Wrapper for the form -->
+            <form action="mailto:ayman.najmuddin@ontariotechu.net" method="post" enctype="text/plain"?subject=Mistakes name="form"> <!-- Form for collecting user information -->
                 <p>
-                    <label for="name">Your Name: </label>
-                    <input type="text" name="name" placeholder="Your complete name" size="32" required>
+                    <label for="name">Your Name: </label> <!-- Label for name input -->
+                    <input type="text" name="name" placeholder="Your complete name" size="32" required> <!-- Input for user's name -->
                 </p>
                 <p>
-                    <label for="email">Your email: </label>
-                    <input type="email" name="email" placeholder="Your email address" size="48" required>
+                    <label for="email">Your email: </label> <!-- Label for email input -->
+                    <input type="email" name="email" placeholder="Your email address" size="48" required> <!-- Input for user's email -->
                 </p>
                 <p>
-                    <label for="phone">Your phone number: </label>
-                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <label for="phone">Your phone number: </label> <!-- Label for phone number input -->
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> <!-- Input for user's phone number -->
                 </p>
                 <p>
-                    <label for="comments">Message: </label>
-                    <br>
-                    <br>
-                    <textarea type="text" name="comments" cols="40" rows="8"></textarea>
+                    <label for="comments">Message: </label> <!-- Label for message textarea -->
+                    <br><br>
+                    <textarea type="text" name="comments" cols="40" rows="8"></textarea> <!-- Textarea for user's message -->
                 </p>
 
                 <p>
-                    <input type="submit" value="Click to submit">
+                    <input type="submit" value="Click to submit"> <!-- Submit button for the form -->
                 </p>
                 <p>
-                    <input type="reset" value="Click to reset the form">
+                    <input type="reset" value="Click to reset the form"> <!-- Reset button for the form -->
                 </p>
             </form>
 
-
-            <footer>
-                <!--email for contact and copyright-->
+            <footer> <!-- Footer section -->
+                <!-- Email for contact and copyright information -->
                 <address>
-                    <p>Contact developer at <a href="mailto:ayman.najmuddin@ontariotechu.net">ayman.najmuddin@ontariotechu.net</a></p>
+                    <p>Contact developer at <a href="mailto:ayman.najmuddin@ontariotechu.net">ayman.najmuddin@ontariotechu.net</a></p> <!-- Email link for contact -->
                 </address>
-                <p>&copy; 2024 by Ayman Najmuddin</p>
-            </footer>
+                <p>&copy; 2024 by Ayman Najmuddin</p> <!-- Copyright notice -->
+            </footer> <!-- Closing footer div -->
         </div>
     </body>
-
 </html>
-

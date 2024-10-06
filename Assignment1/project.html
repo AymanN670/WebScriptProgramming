@@ -1,80 +1,78 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <title>Projects</title>
-        <link rel="stylesheet" type="text/css" href="project.css">
-        <link rel="stylesheet" type="text/css" href="home.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive design settings -->
+        <meta charset="UTF-8"> <!-- Character encoding for the document -->
+        <title>Projects</title> <!-- Title of the webpage displayed in the browser tab -->
+        
+        <!-- Linking CSS stylesheets for styling the page -->
+        <link rel="stylesheet" type="text/css" href="project.css"> <!-- Styles for the Projects page -->
+        <link rel="stylesheet" type="text/css" href="home.css"> <!-- Main stylesheet -->
+        <link href="desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 960px)"> <!-- Styles for desktop screens -->
+        <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)"> <!-- Styles for tablet screens -->
+        <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)"> <!-- Styles for mobile screens -->
     </head>
+    
     <body>
         <header>
-            <nav>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Me</a>
-                    <a href="project.html">Projects</a>
-                    <a href="contactme.html">Contact Me</a>
+            <nav> <!-- Navigation bar with links to different pages -->
+                <a href="index.html">Home</a> <!-- Link to Home page -->
+                <a href="about.html">About Me</a> <!-- Link to About Me page -->
+                <a href="project.html">Projects</a> <!-- Link to Projects page -->
+                <a href="contactme.html">Contact Me</a> <!-- Link to Contact Me page -->
             </nav>
         </header>
 
         <article>
-            <aside>
+            <aside> <!-- Aside element for additional information -->
                 <p>The first image is the first iteration that I drew out using data points that I thought were important or showed a significant 
                 difference in the data</p>
                 <p>The second image is the second iteration where I used the same data that I used to create the bar graphs but instead 
                     with wood. Each cube equals to 100,000 people. The colour of the popsicles define the temperature. The yellow popsicles do not represent any temperature.
                 </p>
-                <p>The last image is the last iteration where I used python and  matplotlib.pyplot to create the cube and show the data. I also used a colour gradient to represent the temperature in my model.</p>
+                <p>The last image is the last iteration where I used python and matplotlib.pyplot to create the cube and show the data. I also used a colour gradient to represent the temperature in my model.</p>
             </aside>
         </article>
 
-        <h2 class="project-title">My Projects: Minard's Russian Campaign Iterations</h2>
+        <h2 class="project-title">My Projects: Minard's Russian Campaign Iterations</h2> <!-- Main heading for the projects section -->
 
-        <div class="frame">
-            <div class="slideshow"> <input type="radio" name="button" class="show" id="one" checked="checked">
-                <div class="slide"><a target="_blank" title="Iteration1Image" href="Iteration1.png"> <img width="512"
-                    alt="First Iteration: Bar Graph of Minard's Russian Campaign" src="Iteration1.png"></a></div>
+        <div class="frame"> <!-- Container for the slideshow -->
+            <div class="slideshow"> 
+                <input type="radio" name="button" class="show" id="one" checked="checked"> <!-- Radio button for the first image -->
+                <div class="slide"> <!-- First slide for the slideshow -->
+                    <a target="_blank" title="Iteration1Image" href="Iteration1.png">
+                        <img width="512" alt="First Iteration: Bar Graph of Minard's Russian Campaign" src="Iteration1.png">
+                    </a>
+                </div>
 
-                <input type="radio" name="button" class="show" id="two" />
-                <div class="slide"> <a target="_blank" title="Iteration2Image" href="Iteration2.png"><img width="512"
-                    alt="Second Iteration: Physical model of my interpretation of the Minard's Russian Campaign" src="Iteration2.png"></a></div>
+                <input type="radio" name="button" class="show" id="two" /> <!-- Radio button for the second image -->
+                <div class="slide"> <!-- Second slide for the slideshow -->
+                    <a target="_blank" title="Iteration2Image" href="Iteration2.png">
+                        <img width="512" alt="Second Iteration: Physical model of my interpretation of the Minard's Russian Campaign" src="Iteration2.png">
+                    </a>
+                </div>
                 
-                <input type="radio" name="button" class="show" id="three" />
-                <div class="slide"> <a target="_blank" title="Iteration3Image" href="Iteration3.png"><img width="512"
-                    alt="Third Iteration: Model made using Python" src="Iteration3.png"></a></div>
-
+                <input type="radio" name="button" class="show" id="three" /> <!-- Radio button for the third image -->
+                <div class="slide"> <!-- Third slide for the slideshow -->
+                    <a target="_blank" title="Iteration3Image" href="Iteration3.png">
+                        <img width="512" alt="Third Iteration: Model made using Python" src="Iteration3.png">
+                    </a>
+                </div>
             </div>
 
-
-            <ul>
-                <li class="button"><label class="button-label" for="one">1</label></li>
-                <li class="button"><label class="button-label" for="two">2</label></li>
-                <li class="button"><label class="button-label" for="three">3</label></li>
+            <ul> <!-- List of buttons for controlling the slideshow -->
+                <li class="button"><label class="button-label" for="one">1</label></li> <!-- Button for the first image -->
+                <li class="button"><label class="button-label" for="two">2</label></li> <!-- Button for the second image -->
+                <li class="button"><label class="button-label" for="three">3</label></li> <!-- Button for the third image -->
             </ul>
-
-
-        
-
-
-
-
         </div>
 
-
-        <footer>
-            <!--email for contact and copyright-->
+        <footer> <!-- Footer section -->
+            <!-- Email for contact and copyright information -->
             <address>
-                <p>Contact developer at <a href="mailto:ayman.najmuddin@ontariotechu.net">ayman.najmuddin@ontariotechu.net</a></p>
+                <p>Contact developer at <a href="mailto:ayman.najmuddin@ontariotechu.net">ayman.najmuddin@ontariotechu.net</a></p> <!-- Email link for contact -->
             </address>
-            <br>
-            <p>&copy; 2024 by Ayman Najmuddin</p>
-        </footer>
-        
-
-
-
-
-        
+            <p>&copy; 2024 by Ayman Najmuddin</p> <!-- Copyright notice -->
+        </footer> <!-- Closing footer div -->
     </body>
 </html>
