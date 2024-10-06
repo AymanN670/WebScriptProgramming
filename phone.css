@@ -1,0 +1,61 @@
+@media only screen and (max-width : 480px) {
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* General layout */
+#wrapper {
+    width: 100%; /* Full width */
+    padding: 10px; /* Add padding */
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+}
+
+/* About Page */
+#wrapper img {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Contact Page */
+#wrapper {
+    display: block;
+}
+
+/* Project Page */
+aside {
+    display: block; 
+    width: 100%;
+    padding: 10px;
+    background-color: lightslategray;
+}
+
+.project-title {
+    margin: 20px 0;
+}
+
+.contact-title {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form p {
+    width: 80%;
+}
+
+/* Footer */
+footer {
+    font-size: small;
+    text-align: center;
+    position: static; /* Move footer down */
+}
+}

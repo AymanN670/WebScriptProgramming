@@ -1,0 +1,31 @@
+@charset "UTF-8";
+body 
+{
+    background-image: linear-gradient(to bottom right, purple 0%,blue 100%);
+
+}
+
+.contact-title {
+    color: black;
+}
+
+#wrapper
+{
+    width: 960px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: lightblue;
+}
+
+
+footer {
+    color: black;
+    text-align: center;
+    padding: 0px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    z-index: 1000;
+}

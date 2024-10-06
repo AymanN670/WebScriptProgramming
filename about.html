@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!-- Character encoding for the document -->
+        <title>About Me</title> <!-- Title of the webpage displayed in the browser tab -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive design settings -->
+        
+        <!-- Linking CSS stylesheets for styling the page -->
+        <link rel="stylesheet" type="text/css" href="about.css"> <!-- Styles for the About Me page -->
+        <link rel="stylesheet" type="text/css" href="home.css"> <!-- Main stylesheet -->
+        <link href="desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 960px)"> <!-- Styles for desktop screens -->
+        <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)"> <!-- Styles for tablet screens -->
+        <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)"> <!-- Styles for mobile screens -->
+    </head>
+
+    <body>
+        <header>
+            <nav> <!-- Navigation bar with links to different pages -->
+                <a href="index.html">Home</a> <!-- Link to Home page -->
+                <a href="about.html">About Me</a> <!-- Link to About Me page -->
+                <a href="project.html">Projects</a> <!-- Link to Projects page -->
+                <a href="contactme.html">Contact Me</a> <!-- Link to Contact Me page -->
+            </nav>
+        </header>
+
+        <!-- Main content wrapper -->
+        <div id="wrapper">
+            <img src="coding.png" alt="Bit image"> <!-- Image representing coding -->
+
+            <article>
+                <aside> <!-- Aside element for additional information -->
+                    <p>Hi, my name is Ayman Najmuddin and I am a student at Ontario Tech University. I'm studying in the IT Networking and Security Program. 
+                        I previously worked at an IT Service Desk where I gained experience with the Active Directory and troubleshooting. 
+                    </p>
+                </aside>
+            </article>
+
+            <div class="right-content"> <!-- Container for right-side content -->
+                <h2>Introduction Video</h2> <!-- Heading for the introduction video -->
+                
+                <!-- Video element with controls for playback -->
+                <video width="360" height="220" controls poster="introduction.png" autoplay muted id="introvid">
+                    <source src="intro.mp4" type="video/mp4"> <!-- Primary video source -->
+                    <source src="intro.ogv" type="video/ogg"> <!-- Alternative video source -->
+                </video>
+
+                <br>
+                <!-- Button to toggle play/pause for the video -->
+                <button onclick="PlayPause()">Play/Pause Button</button>
+
+                <!-- JavaScript function to control video playback -->
+                <script>
+                    var mybtn = document.getElementById("introvid"); // Get the video element
+                    function PlayPause() {
+                        if (mybtn.paused) // Check if the video is paused
+                            mybtn.play(); // Play the video if it is paused
+                        else
+                            mybtn.pause(); // Pause the video if it is playing
+                    }
+                </script>
+            </div>
+
+            <footer> <!-- Footer section with contact information -->
+                <address>
+                    <p>Contact developer at <a href="mailto:ayman.najmuddin@ontariotechu.net">ayman.najmuddin@ontariotechu.net</a></p> <!-- Email link for contact -->
+                </address>
+                <p>&copy; 2024 by Ayman Najmuddin</p> <!-- Copyright notice -->
+            </footer>
+        </div>
+    </body>
+</html>
