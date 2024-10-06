@@ -1,7 +1,9 @@
 body {
     width: 100%;
     margin: auto;
+    overflow-y: auto;
 }
+
 
 aside 
 {
@@ -12,6 +14,13 @@ aside
     margin: 5px;
 }
 
+.project-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 210px;
+}
+
 figure {
     width: 320px;
 }
@@ -20,13 +29,15 @@ img {
     width: 100%
 }
 
-.slideshow,.frame {
+.slideshow, .frame {
     position: relative;
     height: 500px;
     width: 500px;
     margin: auto;
+    margin: 20px auto;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+
 
 .slide {
     width: 100%;
@@ -72,13 +83,19 @@ input {
 
 
 footer {
+    background-color: #93744d;
+    scroll-margin-right: -100px;
+    width: 70%;
+    padding: 13px 0px;
     text-align: center;
-    padding: 20px 0px;
-    position: fixed;
+    position: relative;
     bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    width: 100%;
-    z-index: 1000;
+    left: 0;
+    margin: 0;
+}
+
+footer address, footer p {
+    color: black;
+    margin: 0;
 }
 
